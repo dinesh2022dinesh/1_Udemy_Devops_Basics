@@ -8,9 +8,6 @@ trigger:
 
 pool:
   name: Dinesh-Yodhin-YS005
-  demands:
-    - Agent.Name -equals Dinesh-Yodhin-YS005
-    - Agent.Version -equals 3.236.1
 
 steps:
  - task: Maven@3
