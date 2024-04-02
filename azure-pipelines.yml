@@ -8,6 +8,8 @@ trigger:
 
 pool:
   name: Dinesh-Yodhin-YS005
+  demands:
+    - Agent.Name -equals Dinesh-Yodhin-YS005
 
 steps:
  - task: Maven@3
