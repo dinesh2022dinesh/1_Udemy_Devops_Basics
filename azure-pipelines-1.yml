@@ -17,7 +17,7 @@ steps:
      publishJUnitResults: true
      testResultsFiles: '**/surefire-reports/TEST-*.xml'
      javaHomeOption: 'JDKVersion'
-     jdkVersionOption: '11'
+     jdkVersionOption: '1.11'
      mavenVersionOption: 'Path'
      mavenDirectory: '/home/yodhin/Downloads/apache-maven-3.9.6'
      mavenSetM2Home: true
