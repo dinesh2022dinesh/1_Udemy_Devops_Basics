@@ -14,14 +14,10 @@ steps:
  - task: Maven@3
    inputs:
      mavenPomFile: 'pom.xml'
+     mavenOptions: '-Xmx3072m'
+     javaHomeOption: 'JDKVersion'
+     jdkVersionOption: '22'
+     jdkArchitectureOption: 'x64'
      publishJUnitResults: true
      testResultsFiles: '**/surefire-reports/TEST-*.xml'
-     javaHomeOption: 'JDKVersion'
-     jdkVersionOption: '1.11'
-     mavenVersionOption: 'Path'
-     mavenDirectory: '/home/yodhin/Downloads/apache-maven-3.9.6'
-     mavenSetM2Home: true
-     mavenOptions: '-Xmx3072m'
-     mavenAuthenticateFeed: false
-     effectivePomSkip: false
-     sonarQubeRunAnalysis: false
+     goals: 'package'
