@@ -19,6 +19,7 @@ steps:
      javaHomeOption: 'JDKVersion'
      jdkVersionOption: '11'
      mavenVersionOption: 'Path'
+     mavenDirectory: '/home/yodhin/Downloads/apache-maven-3.9.6'
      mavenSetM2Home: true
      mavenOptions: '-Xmx3072m'
      mavenAuthenticateFeed: false
